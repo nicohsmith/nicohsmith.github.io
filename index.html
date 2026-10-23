@@ -9,7 +9,7 @@
   <style>
     body {
       max-width: 680px;
-      margin: 100px auto;
+      margin: 72px auto;
       padding: 0 24px;
       font-family: Arial, sans-serif;
       line-height: 1.8;
@@ -36,6 +36,8 @@
       color: #315d83;
       text-decoration: none;
       margin-right: 18px;
+      display: inline-block;
+  margin: 0 18px 8px 0;
     }
 
     a:hover {
@@ -47,27 +49,76 @@
       color: #888888;
       font-size: 13px;
     }
+
+    .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+}
+
+.profile-header h1 {
+  margin-top: 0;
+}
+
+.last-edited {
+  font-size: 13px;
+  color: #888888;
+}
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 88px;
+    height: 88px;
+  }
+
+  .profile-header {
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
   </style>
 </head>
 
 <body>
-  <h1>Nico Smith</h1>
-  <p class="subtitle">Personal website</p>
+  <div class="profile-header">
+    <img
+      src="headshot.jpg"
+      alt="Nico Smith profile picture"
+      class="profile-photo"
+    >
+
+    <div>
+      <h1>Nico Smith</h1>
+      <p class="subtitle">Personal website</p>
+    </div>
+  </div>
 
   <h2>About me</h2>
   <p>
     Hi, I'm Nico! Welcome to my website.</p>
   <p> I’m currently studying for my Master’s in maths at Cambridge, 
-    and am trying to move into AI safety research to contribute to minimising catastrophic 
-    risk. I have some research experience, but am currently trying to upskill to make sure I have 
+    and am interested in AI safety research, particularly work that helps reduce catastrophic risks from advanced AI systems. I have some research experience, but am currently trying to upskill to make sure I have 
     the prerequisite knowledge required to move into the area.</p>
 
   <p>
     Here, you can find my CV, a link to my Substack blog, and any other links I put here as I continue to develop my AI safety portfolio.
   </p>
     <p>
-    This page will hopefully be evolving quickly as I post projects and writing. <br>
-      <strong>On the way:</strong> I am starting self-studying the ARENA curriculum, and plan to post some projects on github in the coming days!
+    This page will hopefully be evolving quickly as I post projects and writing. </p>
+      <p>
+      <strong>On the way:</strong> I have just begun self-studying the ARENA curriculum, and plan to post some projects on github in the coming days!
       
   </p> 
 
